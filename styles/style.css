@@ -1,0 +1,86 @@
+html {
+    background-color: lightgray;
+    
+}
+
+.unfocus {
+    opacity: .3;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+section {
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+.books {
+    width: 90%;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 15px;
+}
+
+p {
+    margin: 7px;
+}
+
+table {
+    margin-top: 10px;
+}
+
+.books th {
+    outline: 1px solid black;
+    text-align: center;
+    background-color: lightgreen;
+    padding: 15px;
+}
+
+.books td {
+    background-color: white;
+    outline: 1px solid black;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.unfocus-main{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top:0px;
+    background: rgba(169, 169, 169, .8);
+   /* opacity: 90%; affects children so not good*/
+}
+
+#book-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+form {
+    background-color: white;
+    height: 40%;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 10px rgb(59, 59, 59);
+}
+
+form > * {
+    margin: 5px;
+}
+
+.offscreen {
+    display: none;
+}
