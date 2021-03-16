@@ -22,7 +22,7 @@
             </section>
         </main>
 
-        <div id="book-form" >
+        <div id="book-form" onsubmit="submitBook()">
             <form class="offscreen">
                 <label for="title">Title:</label><br>
                 <input type="text" id="title" required><br>
@@ -39,7 +39,7 @@
                 <input type="checkbox" id="completed" value="bool">
                 <label for="completed">Finished Reading</label><br>
 
-                <button type="button" onclick="submitBook()">Add Book</button>
+                <button type="submit" >Add Book</button>
             </form> 
         </div>
 

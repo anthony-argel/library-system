@@ -113,7 +113,6 @@ function Book() {
 function addBookToLibrary() {
     myLibrary.push(arguments[0]);
     saveLibrary();
-    loadLibrary();
 }
 
 function removeAllChildNodes(parent) {
@@ -189,8 +188,6 @@ function submitBook() {
     let form = document.querySelector("form");
     form.classList.toggle("offscreen");
 
-    let read = document.getElementById("completed");
-
     let newBook = Book (
         document.querySelector("#title").value,
         document.querySelector("#author").value,
@@ -199,7 +196,6 @@ function submitBook() {
         document.getElementById("rating").value
     )
     addBookToLibrary(newBook);
-    form.reset();
 }
 
 loadLibrary();
